@@ -23,6 +23,9 @@ namespace resistors_and_parrllel
         }
 
         private void button2_Click(object sender, EventArgs e)
+        //this part of the code is making the text boxs equal r1 through r5 so that they can be added together
+
+
         {
             double r1, r2, r3, r4, r5;
 
@@ -66,6 +69,8 @@ namespace resistors_and_parrllel
             {
                 r5 = 0;
             }
+            //the next 2 lines of code adds all the values of the text boxs together and also because each box equals 0 if you dont input a value it will class it as 0
+
 
             double rt = r1 + r2 + r3 + r4 + r5;
             label1.Text = "total resistance =" + rt;
@@ -73,6 +78,8 @@ namespace resistors_and_parrllel
         }
 
         private void button1_Click(object sender, EventArgs e)
+            //this is making the text boxs equal 1 through 5 resistors so that the calculations can be performed when you input the numbers into the text boxs
+
         {
             double r1, r2, r3, r4, r5;
 
@@ -123,8 +130,10 @@ namespace resistors_and_parrllel
             {
                 
             }
+            //this is saying to get the total resistance like series calculation except you divide 1 by the total.
 
             double rt = 1/rrt;
+            //this is the code to display the answer on the label.
             label2.Text = "total resistance =" + rt;
         }
 
